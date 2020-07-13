@@ -1,0 +1,22 @@
+{
+  "name": "Add Scout",
+  "description": "This app performs collection add information, from context add in search system Yandex and Google",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "browser_action": {
+    "default_title": "Ads Scout",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "https://yandex.ru/*", "https://www.google.ru/*" ],
+      "js": [ "script.js" ],
+      "run_at":"document_end"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+@font-face {
+    font-family: MuseoModernoBold;
+    src: url(../fonts/MuseoModerno-Bold.ttf);
+}
+@font-face {
+    font-family: UbuntuBold;
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: UbuntuLight;
+    src: url(../fonts/Ubuntu-Light.ttf);
+}
+body {
+    width: 500px;
+    max-width: 500px;
+    min-height: 300px;
+    background-color: #008DFF;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo__img {
+    padding-right: 10%;
+}
+.logo__img svg {
+    height: 74px;
+    width: auto;
+}
+.logo__text {
+    font-family: MuseoModernoBold;
+    font-size: 24px;
+}
+.on {
+    cursor: pointer;
+}
+.on__img {
+    display: flex;
+    justify-content: center;
+}
+.on__img img {
+    width: 40px;
+    height: 40px;
+}
+.on__text {
+    font-family: UbuntuBold;
+    font-size: 16px;
+    margin-top: 0;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.item__text {
+    font-family: UbuntuLight;
+    font-size: 18px;
+}
+.item__delete {
+    cursor: pointer;
+}
+.item__delete svg path {
+    transition: 0.3s;
+}
+.item__delete:hover svg path {
+    fill: #FE2319;
+}
+main {
+    padding-top: 5%;
+    height: 140px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+
